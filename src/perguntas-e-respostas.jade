@@ -1,0 +1,110 @@
+
+extends ./templates/layout.jade
+
+block vars
+  - var title='Perguntas e Respostas'
+  - var description = 'Orientar, esclarecer e ajudar os consumidores, principalmente àqueles que possuem dívidas, acerca de seus direitos, demonstrando de forma clara e objetiva como funcionam as principais formas de crédito, os tipos de contratos existentes e os sistemas de restrição de crédito como SPC, SERASA, SCPC e afins.'
+
+block content
+    .row
+        ol.breadcrumb
+            li: a(href="#") Página Inicial
+            li.active Perguntas e Respostas
+
+        .col-sm-9
+            main.main-content
+                h1 <span>Perguntas e Respostas |</span> Dívidas
+                #accordion(class="panel-group" role="tablist", aria-multiselectable="true")
+                    .panel.panel-default
+                        #headingOne(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseOne", aria-expanded="true", aria-controls="collapseOne") Collapsible Empréstimos Consignados INSS
+
+                        #collapseOne(class="panel-collapse collapse in", role="tabpanel", aria-labelledby="headingOne")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingTwo(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseTwo", aria-expanded="true", aria-controls="collapseTwo") Alienação Fiduciária
+
+                        #collapseTwo(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingTwo")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingThree(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseThree", aria-expanded="true", aria-controls="collapseThree") Dívidas
+
+                        #collapseThree(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingThree")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingFour(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseFour", aria-expanded="true", aria-controls="collapseFour") Título de Capitalização
+
+                        #collapseFour(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingFour")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingFive(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseFive", aria-expanded="true", aria-controls="collapseFive") Leasing
+
+                        #collapseFive(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingFive")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingSix(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseSix", aria-expanded="true", aria-controls="collapseSix") Tarifas Bancárias
+
+                        #collapseSix(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingSix")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingSeven(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseSeven", aria-expanded="true", aria-controls="collapseSeven") Cartão de Crédito
+
+                        #collapseSeven(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingSeven")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingEight(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseEight", aria-expanded="true", aria-controls="collapseEight") Financiamentos
+
+                        #collapseEight(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingEight")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingNine(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseNine", aria-expanded="true", aria-controls="collapseNine") Cheque Especial
+
+                        #collapseNine(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingNine")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+                    .panel.panel-default
+                        #headingTen(class="panel-heading", role="tab")
+                            h4.panel-title
+                                a(role="button", data-toggle="collapse", data-parent="#accordion", href="#collapseTen", aria-expanded="true", aria-controls="collapseTen") Renegociação de Dívida
+
+                        #collapseTen(class="panel-collapse collapse", role="tabpanel", aria-labelledby="headingTen")
+                            .panel-body.
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+        .col-sm-3
+
+            include ./templates/partials/aside.jade

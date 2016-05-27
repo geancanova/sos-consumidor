@@ -1,0 +1,40 @@
+
+extends ./templates/layout.jade
+
+block vars
+  - var title='Institucional'
+  - var description = 'Orientar, esclarecer e ajudar os consumidores, principalmente àqueles que possuem dívidas, acerca de seus direitos, demonstrando de forma clara e objetiva como funcionam as principais formas de crédito, os tipos de contratos existentes e os sistemas de restrição de crédito como SPC, SERASA, SCPC e afins.'
+
+block content
+    .row
+        ol.breadcrumb
+            li: a(href="#") Página Inicial
+            li.active Institucional
+
+        .col-sm-9
+            main.main-content
+                h1 Institucional
+
+                ul(class="nav nav-tabs" role="tablist")
+                    li(role="presentation" class="active")
+                        a(href="#quem-somos", aria-controls="quem-somos", role="tab", data-toggle="tab") Quem Somos
+                    li(role="presentation")
+                        a(href="#na-midia", aria-controls="na-midia", role="tab", data-toggle="tab") Na Mídia
+                    li(role="presentation")
+                        a(href="#politica-de-privacidade", aria-controls="politica-de-privacidade", role="tab", data-toggle="tab") Política de Privacidade
+                    li(role="presentation")
+                        a(href="#politica-de-publicidade", aria-controls="politica-de-publicidade", role="tab", data-toggle="tab") Política de Publicidade
+
+                div.tab-content
+                    div(role="tabpanel", class="tab-pane fade in active", id="quem-somos")
+                        h2 Quem Somos
+                        div(class="alert alert-warning", role="alert") Todo o conteúdo deste site é de acesso gratuito a qualquer pessoa!
+                        h3 Por que este site existe?
+                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis totam, quos quaerat itaque dicta obcaecati mollitia magni eveniet laudantium suscipit labore quae, repellat aspernatur possimus cupiditate molestias aperiam voluptates ipsa.
+                    div(role="tabpanel", class="tab-pane fade", id="na-midia")
+                    div(role="tabpanel", class="tab-pane fade", id="politica-de-privacidade")
+                    div(role="tabpanel", class="tab-pane fade", id="politica-de-publicidade")
+
+        .col-sm-3
+
+            include ./templates/partials/aside.jade

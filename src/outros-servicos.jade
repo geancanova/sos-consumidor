@@ -1,0 +1,59 @@
+
+extends ./templates/layout.jade
+
+block vars
+  - var title='Outros Serviços'
+  - var description = 'Orientar, esclarecer e ajudar os consumidores, principalmente àqueles que possuem dívidas, acerca de seus direitos, demonstrando de forma clara e objetiva como funcionam as principais formas de crédito, os tipos de contratos existentes e os sistemas de restrição de crédito como SPC, SERASA, SCPC e afins.'
+
+block content
+    .row
+        ol.breadcrumb
+            li: a(href="#") Página Inicial
+            li.active Outros Serviços
+
+        .col-sm-9
+            main.main-content
+                h1 Outros Serviços
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur corrupti aliquam voluptatum asperiores natus culpa sint ratione cupiditate qui numquam, suscipit ab amet eaque dolore totam obcaecati quis corporis nam.
+
+                .row
+                    .col-sm-6
+                        .service
+                            .service__logo
+                                img(src="http://placehold.it/250x50", alt="Logotipo")
+                            h2 Gerenciador Financeiro
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quos atque reprehenderit perferendis dolore ducimus adipisci dignissimos expedita perspiciatis quaerat quae cupiditate porro harum aliquam, consectetur tenetur ipsam autem blanditiis?
+
+                        .service
+                            .service__logo
+                                img(src="http://placehold.it/250x50", alt="Logotipo")
+                            h2 Faça sua reclamação
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quos atque reprehenderit perferendis dolore ducimus adipisci dignissimos expedita perspiciatis quaerat quae cupiditate porro harum aliquam, consectetur tenetur ipsam autem blanditiis?
+
+                        .service
+                            .service__logo
+                                img(src="http://placehold.it/250x50", alt="Logotipo")
+                            h2 Juros Bancários
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quos atque reprehenderit perferendis dolore ducimus adipisci dignissimos expedita perspiciatis quaerat quae cupiditate porro harum aliquam, consectetur tenetur ipsam autem blanditiis?
+
+                    .col-sm-6
+                        .service
+                            .service__logo
+                                img(src="http://placehold.it/250x50", alt="Logotipo")
+                            h2 Cálculos
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quos atque reprehenderit perferendis dolore ducimus adipisci dignissimos expedita perspiciatis quaerat quae cupiditate porro harum aliquam, consectetur tenetur ipsam autem blanditiis?
+
+                        .service
+                            .service__logo
+                                img(src="http://placehold.it/250x50", alt="Logotipo")
+                            h2 Teste sua internet
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quos atque reprehenderit perferendis dolore ducimus adipisci dignissimos expedita perspiciatis quaerat quae cupiditate porro harum aliquam, consectetur tenetur ipsam autem blanditiis?
+
+                        .service
+                            .service__logo
+                                img(src="http://placehold.it/250x50", alt="Logotipo")
+                            h2 Calculadora do Cidadão
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo quos atque reprehenderit perferendis dolore ducimus adipisci dignissimos expedita perspiciatis quaerat quae cupiditate porro harum aliquam, consectetur tenetur ipsam autem blanditiis?
+        .col-sm-3
+
+            include ./templates/partials/aside.jade

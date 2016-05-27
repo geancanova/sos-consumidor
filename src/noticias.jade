@@ -1,0 +1,60 @@
+
+extends ./templates/layout.jade
+
+block vars
+  - var title='Notícias'
+  - var description = 'Orientar, esclarecer e ajudar os consumidores, principalmente àqueles que possuem dívidas, acerca de seus direitos, demonstrando de forma clara e objetiva como funcionam as principais formas de crédito, os tipos de contratos existentes e os sistemas de restrição de crédito como SPC, SERASA, SCPC e afins.'
+
+block content
+    .row
+        ol.breadcrumb
+            li: a(href="#") Página Inicial
+            li.active Notícias
+
+        .col-sm-9
+            main.main-content
+                h1 Notícias
+
+                .post
+                    .row
+                        .col-md-5
+                            a(href="#"): img(src="img/placeholder2.jpg", alt="Placeholder" class="post__img")
+                        .col-md-7
+                            h2.post__tit: a(href="#") Deputados votam a favor do Impedimento
+                            p.post__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni autem. Eum voluptate aliquam consequatur iusto accusamus. Distinctio a ratione, atque unde nobis nisi similique illum, minima nesciunt quas totam.
+                .post
+                    .row
+                        .col-md-5
+                            a(href="#"): img(src="img/placeholder2.jpg", alt="Placeholder" class="post__img")
+                        .col-md-7
+                            h2.post__tit: a(href="#") Deputados votam a favor do Impedimento
+                            p.post__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni autem. Eum voluptate aliquam consequatur iusto accusamus. Distinctio a ratione, atque unde nobis nisi similique illum, minima nesciunt quas totam.
+
+                ul(class="links-list links-list--news")
+                - for (var x = 0; x < 8; x++)
+                    li.links-list__item
+                        span 27/05/2016
+                        a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit
+
+                nav.text-center
+                    ul.pagination
+                        li.disabled
+                            a(href="#", aria-label="Previous")
+                                span(aria-hidden="true") &lt;
+                        li.active
+                            a(href="#") 1 <span class="sr-only">(current)</span>
+                        li
+                            a(href="#") 2
+                        li
+                            a(href="#") 3
+                        li
+                            a(href="#") 4
+                        li
+                            a(href="#") 5
+                        li
+                            a(href="#", aria-label="Next")
+                                span(aria-hidden="true") &gt;
+
+        .col-sm-3
+
+            include ./templates/partials/aside.jade

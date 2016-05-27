@@ -1,17 +1,16 @@
 @import "bootstrap";
 
-$main: #0000FF;
+$main: #333;
 
 body {
-	padding: 20px;
-	color: $main;
+    color: $main;
 }
 
 img {
-	@include transition(1s);
+    @include transition(1s);
 }
 
 img:hover {
-	@include rotate(45deg);
-	@include opacity(.5);
+    // @include rotate(45deg);
+    @include opacity(.5);
 }

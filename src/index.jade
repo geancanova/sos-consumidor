@@ -1,0 +1,47 @@
+
+extends ./templates/layout.jade
+
+block vars
+  - var title='SOS Consumidor'
+  - var description = 'Orientar, esclarecer e ajudar os consumidores, principalmente àqueles que possuem dívidas, acerca de seus direitos, demonstrando de forma clara e objetiva como funcionam as principais formas de crédito, os tipos de contratos existentes e os sistemas de restrição de crédito como SPC, SERASA, SCPC e afins.'
+
+block content
+    .row
+        .col-sm-9
+            main.main-content
+                .post
+                    a(href="#"): img(src="img/placeholder2.jpg", alt="Placeholder" class="post__img")
+                    h2.post__tit: a(href="#") Deputados votam a favor do Impedimento
+                    p.post__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni autem. Eum voluptate aliquam consequatur iusto accusamus. Distinctio a ratione, atque unde nobis nisi similique illum, minima nesciunt quas totam.
+                .row
+                    .col-md-6
+                        .post
+                            a(href="#"): img(src="img/placeholder2.jpg", alt="Placeholder" class="post__img")
+                            h2.post__tit: a(href="#") Deputados votam a favor do Impedimento
+                            p.post__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni autem. Eum voluptate aliquam consequatur iusto accusamus. Distinctio a ratione, atque unde nobis nisi similique illum, minima nesciunt quas totam.
+                    .col-md-6
+                        .post
+                            a(href="#"): img(src="img/placeholder2.jpg", alt="Placeholder" class="post__img")
+                            h2.post__tit: a(href="#") Deputados votam a favor do Impedimento
+                            p.post__excerpt Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, magni autem. Eum voluptate aliquam consequatur iusto accusamus. Distinctio a ratione, atque unde nobis nisi similique illum, minima nesciunt quas totam.
+                .row
+                    .col-md-6
+                        h3 Notícias
+                        ul(class="links-list links-list--news")
+                        - for (var x = 0; x < 8; x++)
+                            li.links-list__item
+                                span 27/05/2016
+                                a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        a(href="#", class="btn") Ver mais notícias
+                    .col-md-6
+                        h3 Perguntas Frequentes
+                        ul(class="links-list links-list--consumer")
+                        - for (var x = 0; x < 6; x++)
+                            li.links-list__item
+                                span Empréstimos Consignados do INSS
+                                a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                        a(href="#", class="btn") Ver mais perguntas frequentes
+
+        .col-sm-3
+
+            include ./templates/partials/aside.jade

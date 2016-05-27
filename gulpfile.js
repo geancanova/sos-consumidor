@@ -16,7 +16,7 @@ var env        = require('minimist')(process.argv.slice(2)),
 
 // Call Jade for compile Templates
 gulp.task('jade', function(){
-	return gulp.src('src/templates/*.jade')
+	return gulp.src('src/*.jade')
 		.pipe(jade({pretty: !env.p }))
 		.pipe(gulp.dest('build/'))
 		.pipe(connect.reload());
@@ -54,7 +54,7 @@ gulp.task('imagemin', function() {
 
 // Call Watch
 gulp.task('watch', function(){
-	gulp.watch('src/templates/**/*.jade', ['jade']);
+	gulp.watch('src/**/*.jade', ['jade']);
 	gulp.watch('src/sass/**/*.scss', ['compass']);
 	gulp.watch('src/js/**/*.js', ['js']);
 	gulp.watch('src/img/**/*.{jpg,png,gif}', ['imagemin']);
