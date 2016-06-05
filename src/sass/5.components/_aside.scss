@@ -1,0 +1,36 @@
+.c-side-bar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.c-aside-links {
+    @extend .list-unstyled;
+
+    &__item {
+        & + & {
+            margin-top: 10px;
+        }
+    }
+
+    &__btn {
+        @extend .o-btn, .o-btn--blk;
+        background-position: left center;
+        background-repeat: no-repeat;
+        padding: 10px 15px 10px 65px;
+
+        &--newsletter {
+            @include button(#a5a5a5);
+            background-image: url('../img/ico-news-sidebar.png');
+        }
+
+        &--attorney {
+            @include button($brand-primary);
+            background-image: url('../img/ico-maleta-sidebar.png');
+        }
+
+        &--consumer {
+            @include button($brand-secondary);
+            background-image: url('../img/ico-avatar-sidebar.png');
+        }
+    }
+}

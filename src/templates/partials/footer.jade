@@ -1,44 +1,54 @@
-footer.main-footer
-    .row
-        .col-sm-3
-            ul.footer-links
-                li(class="footer-links__item footer-links__item--tit") Perguntas e Respostas
-                li.footer-links__item: a(href="#") Dívidas
-                li.footer-links__item: a(href="#") Dano Moral
-                li.footer-links__item: a(href="#") SPC/SERASA/SCPC
-                li.footer-links__item: a(href="#") Defenda-se
-                li.footer-links__item: a(href="#") Dicas Úteis
-                li.footer-links__item: a(href="#") Informe-se
-                li.footer-links__item: a(href="#") SFH
-                li.footer-links__item: a(href="#") Dúvidas Trabalhistas
-        .col-sm-3
-            ul.footer-links
-                li(class="footer-links__item footer-links__item--tit") Outros Serviços
-                li.footer-links__item: a(href="#") Gerenciador Financeiro
-                li.footer-links__item: a(href="#") Cálculos
-                li.footer-links__item: a(href="#") Faça sua reclamação
-                li.footer-links__item: a(href="#") Teste sua internet
-                li.footer-links__item: a(href="#") Juros bancários
-                li.footer-links__item: a(href="#") Calculadora do cidadão
-        .col-sm-3
-            ul.footer-links
-                li(class="footer-links__item footer-links__item--tit") Institucional
-                li.footer-links__item: a(href="#") Quem somos
-                li.footer-links__item: a(href="#") Na mídia
-                li.footer-links__item: a(href="#") Política de Privacidade
-                li.footer-links__item: a(href="#") Política de Publicidade
-        .col-sm-3
-            ul.footer-links
-                li(class="footer-links__item footer-links__item--tit"): a(href="#") Notícias
-                li(class="footer-links__item footer-links__item--tit"): a(href="#") Contato
-                li(class="footer-links__item footer-links__item--tit") Fóruns
-                li.footer-links__item: a(href="#") Área do Advogado
-                li.footer-links__item: a(href="#") Área do Consumidor
-    .row
-        .col-sm-3
-            img(src="http://placehold.it/300x120", alt="Logo SOS Consumidor")
-        .col-sm-6
-            p.text-center &copy; Copyright 2016 - Associação dos Consumidores Endividados
+footer.c-main-footer
+    .c-footer-nav
+        .container-fluid
+            .l-content-block
+                .row
+                    .col-sm-6
+                        .row
+                            .col-xs-6
+                                ul.c-footer-links
+                                    li(class="c-footer-links__item c-footer-links__item--tit") Perguntas e Respostas
+                                    li.c-footer-links__item: a(href="/perguntas-e-respostas#dividas") Dívidas
+                                    li.c-footer-links__item: a(href="/perguntas-e-respostas#dano-moral") Dano Moral
+                                    li.c-footer-links__item: a(href="/perguntas-e-respostas#spc-serasa-scpc") SPC/SERASA/SCPC
+                                    li.c-footer-links__item: a(href="/perguntas-e-respostas#defenda-se") Defenda-se
+                                    li.c-footer-links__item: a(href="/perguntas-e-respostas#dicas-uteis") Dicas Úteis
+                                    li.c-footer-links__item: a(href="/perguntas-e-respostas#informe-se") Informe-se
+                                    li.c-footer-links__item: a(href="/perguntas-e-respostas#sfh") SFH
+                                    li.c-footer-links__item: a(href="/perguntas-e-respostas#duvidas-trabalhistas") Dúvidas Trabalhistas
+                            .col-xs-6
+                                ul.c-footer-links
+                                    li(class="c-footer-links__item c-footer-links__item--tit") Outros Serviços
+                                    li.c-footer-links__item: a(href="/outros-servicos") Gerenciador Financeiro
+                                    li.c-footer-links__item: a(href="/outros-servicos") Cálculos
+                                    li.c-footer-links__item: a(href="/outros-servicos") Faça sua reclamação
+                                    li.c-footer-links__item: a(href="/outros-servicos") Teste sua internet
+                                    li.c-footer-links__item: a(href="/outros-servicos") Juros bancários
+                                    li.c-footer-links__item: a(href="/outros-servicos") Calculadora do cidadão
+                    .col-sm-6
+                        .row
+                            .col-xs-6
+                                ul.c-footer-links
+                                    li(class="c-footer-links__item c-footer-links__item--tit") Institucional
+                                    li.c-footer-links__item: a(href="/institucional#quem-somos") Quem somos
+                                    li.c-footer-links__item: a(href="/institucional#na-midia") Na mídia
+                                    li.c-footer-links__item: a(href="/institucional#politica-de-privacidade") Política de Privacidade
+                                    li.c-footer-links__item: a(href="/institucional#politica-de-publicidade") Política de Publicidade
+                            .col-xs-6
+                                ul.c-footer-links
+                                    li(class="c-footer-links__item c-footer-links__item--tit"): a(href="/noticias") Notícias
+                                    li(class="c-footer-links__item c-footer-links__item--tit"): a(href="/contatos") Contato
+                                    li(class="c-footer-links__item c-footer-links__item--tit") Fóruns
+                                    li.c-footer-links__item: a(href="#") Área do Advogado
+                                    li.c-footer-links__item: a(href="#") Área do Consumidor
+    .c-footer-bar
+        .container-fluid
+            .l-content-block
+                .row
+                    .col-sm-4.col-md-3
+                        img(src="img/logo-footer.png", alt="SOS Consumidor - Associação de Defesa do Consumidor", class="c-footer-bar__logo")
+                    .col-sm-8.col-md-6
+                        p.text-center &copy; Copyright 2016 - Associação dos Consumidores Endividados
 
 script(type="text/javascript", src="//code.jquery.com/jquery-1.11.0.min.js")
 script(type="text/javascript", src="js/main.js")

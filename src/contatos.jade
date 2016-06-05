@@ -6,58 +6,65 @@ block vars
   - var description = 'Orientar, esclarecer e ajudar os consumidores, principalmente àqueles que possuem dívidas, acerca de seus direitos, demonstrando de forma clara e objetiva como funcionam as principais formas de crédito, os tipos de contratos existentes e os sistemas de restrição de crédito como SPC, SERASA, SCPC e afins.'
 
 block content
-    .row
-        ol.breadcrumb
-            li: a(href="#") Página Inicial
-            li.active Contatos
+    .c-breadcrumb
+        .l-content-block
+            .c-breadcrumb__list
+                .c-breadcrumb__item: a(href="/") Página Inicial
+                .c-breadcrumb__item.active Contatos
 
-        .col-sm-9
-            main.main-content
-                h1 Contatos
+    .container-fluid
+        .l-content-block
+            .row
+                .col-sm-9
+                    main.c-main-content
+                        h1.o-tit.o-tit--22 Contatos
 
-                div(class="alert alert-warning", role="alert") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto quos aperiam non, sit dolore. Ad aliquid, aliquam assumenda quia officiis laudantium cumque esse, id hic, voluptatem cum architecto fugit ab!
+                        div(class="alert alert-warning", role="alert") Prezado visitante, Informamos que tivemos um ataque de Hackers no nosso servidor que deletou todo nosso banco de dados e nossos backups. Estamos trabalhando para recuperar o máximo de conteúdo possível, mas isto demorará alguns dias. Infelizmente todos os cadastros (de advogados e consumidores), postagens, históricos, perguntas e respostas foram apagados, ou seja, teremos que recomeçar esta parte do zero. Teremos que fazer vários ajustes pois muitos dos links e formulários ainda não estão em pleno funcionamento. Iremos contratar um servidor externo de backups para evitar novas “surpresas” como esta. Esperamos a sua compreensão. Para entrar em contato com os editores do site envie um e-mail para <strong>editores@sosconsumidor.com.br</strong> ou utilize o formulário abaixo.
 
-                .row
-                    .col-sm-6
-                        h2 E-mails de contato
-                        ul
-                            li Atendimento <br>
-                                a(href="mailto:atendimento@endividado.com.br") atendimento@endividado.com.br
-                            li Dúvidas <br>
-                                a(href="mailto:duvidas@endividado.com.br") duvidas@endividado.com.br
-                    .col-sm-6
-                        h2 Telefones de contato
-                        ul
-                            li Atendimento ao público: <strong>(51) 3456.7890</strong>
-                            li Dúvidas: <strong>(51) 3456.7890</strong>
-                .row
-                    .col-xs-12
-                        h2 Fale Conosco
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tempora fugiat nam, aspernatur eos error dignissimos ex omnis magnam quis, quas, facilis amet ab blanditiis atque aliquam facere repudiandae molestiae.
-                    .col-sm-6
-                        form
-                            .form-group
-                                label(for="name") Name
-                                input(type="text", class="form-control", id="name")
-                            .form-group
-                                label(for="email") Email
-                                input(type="email", class="form-control", id="email")
-                            .form-group
-                                label(for="phone") Telefone
-                                input(type="text", class="form-control", id="phone")
-                            .form-group
-                                label(for="estate") Estado
-                                select(class="form-control", id="estate")
-                                    option selecione
-                            .form-group
-                                label(for="city") Cidade
-                                select(class="form-control", id="city")
-                                    option selecione
-                            .form-group
-                                label(for="message") Mensagem
-                                textarea(class="form-control", id="message", rows="5")
-                            .form-group
-                                button(type="submit", class="btn btn-default") Enviar
-        .col-sm-3
+                        .row
+                            .col-sm-6
+                                h2.o-tit.o-tit--18 E-mails de contato
+                                ul.o-list
+                                    li.o-list__item Atendimento <br>
+                                        a(href="mailto:atendimento@endividado.com.br") atendimento@endividado.com.br
+                                    li.o-list__item Dúvidas <br>
+                                        a(href="mailto:duvidas@endividado.com.br") duvidas@endividado.com.br
+                            .col-sm-6
+                                h2.o-tit.o-tit--18 Telefones de contato
+                                ul.o-list
+                                    li.o-list__item Atendimento ao público: <strong>(51) 3456.7890</strong>
+                                    li.o-list__item Dúvidas: <strong>(51) 3456.7890</strong>
+                        hr.o-hr
+                        .row
+                            .col-xs-12
+                                h2.o-tit.o-tit--18 Fale Conosco
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat tempora fugiat nam, aspernatur eos error dignissimos ex omnis magnam quis, quas, facilis amet ab blanditiis atque aliquam facere repudiandae molestiae.
+                            .col-sm-6
+                                form
+                                    .form-group
+                                        label(for="name") Name
+                                        input(type="text", class="form-control", id="name")
+                                    .form-group
+                                        label(for="email") Email
+                                        input(type="email", class="form-control", id="email")
+                                    .form-group
+                                        label(for="phone") Telefone
+                                        input(type="text", class="form-control", id="phone")
+                                    .form-group
+                                        label(for="estate") Estado
+                                        select(class="form-control", id="estate")
+                                            option selecione
+                                    .form-group
+                                        label(for="city") Cidade
+                                        select(class="form-control", id="city")
+                                            option selecione
+                                    .form-group
+                                        label(for="message") Mensagem
+                                        textarea(class="form-control", id="message", rows="5")
+                                    .form-group
+                                        .g-recaptcha(data-sitekey="6LdwvCETAAAAANMEmfjcpd0UZdey1s8WDQzisdyO")
+                                    .form-group
+                                        button(type="submit", class="o-btn o-btn--sm o-btn--primary") Enviar
+                .col-sm-3
 
-            include ./templates/partials/aside.jade
+                    include ./templates/partials/aside.jade

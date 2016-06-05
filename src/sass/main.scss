@@ -1,16 +1,32 @@
+@import "./1.config/variables";
 @import "bootstrap";
 
-$main: #333;
+@import "./2.base/default";
 
-body {
-    color: $main;
-}
+@import "./3.objects/type";
+@import "./3.objects/buttons";
+@import "./3.objects/advertising";
+@import "./3.objects/forms";
+@import "./3.objects/img-wrapper";
+@import "./3.objects/links-list";
+@import "./3.objects/list";
 
-img {
-    @include transition(1s);
-}
+@import "./4.layout/content-block";
 
-img:hover {
-    // @include rotate(45deg);
-    @include opacity(.5);
-}
+@import "./5.components/header";
+@import "./5.components/hamburger";
+@import "./5.components/nav";
+@import "./5.components/breadcrumbs";
+@import "./5.components/main";
+@import "./5.components/nav-tabs";
+@import "./5.components/comments";
+@import "./5.components/gallery";
+@import "./5.components/pagination";
+@import "./5.components/panel-group";
+@import "./5.components/post";
+@import "./5.components/service";
+@import "./5.components/well";
+@import "./5.components/aside";
+@import "./5.components/footer";
+
+@import "./6.vendor/slick";

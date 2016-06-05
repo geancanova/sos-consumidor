@@ -1,0 +1,12 @@
+.c-comments {
+    margin: 20px auto;
+
+    &__list {
+        @extend .list-unstyled;
+        margin-top: 15px;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+    }
+}

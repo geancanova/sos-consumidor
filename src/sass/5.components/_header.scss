@@ -1,0 +1,77 @@
+.c-main-header {
+    position: relative;
+    background: rgba(255,255,255,1);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(225,238,247,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e1eef7', GradientType=0 );
+    border-bottom: 1px solid #ccc;
+
+    &__date {
+        color: #666;
+
+        @media (min-width: $screen-md) {
+            padding-top: 50px;
+        }
+    }
+
+    &__hr {
+        border-color: #165483;
+    }
+
+    &__btn {
+        height: 100px;
+        width: 50%;
+        background-position: center 15px;
+        background-repeat: no-repeat;
+        font-size: 14px;
+        padding-top: 70px;
+        text-align: center;
+
+        @media (min-width: $screen-sm) {
+            width: 160px;
+
+            & + & {
+                margin-left: 10px;
+            }
+        }
+
+        &--attorney {
+            background-image: url('../img/ico-maleta.png');
+        }
+
+        &--consumer {
+            background-image: url('../img/ico-avatar.png');
+        }
+    }
+}
+
+.c-search {
+    position: relative;
+    margin-bottom: 20px;
+
+    > * {
+        display: inline-block;
+        width: auto;
+    }
+
+    @media (min-width: $screen-md) {
+        width: 100%;
+        margin-top: -4px;
+        margin-bottom: 0;
+
+        > * {
+            position: absolute;
+        }
+
+        .form-control {
+            left: 0;
+            top: -1px;
+            width: 100%;
+            padding-right: 78px;
+        }
+
+        .o-btn {
+            z-index: 1;
+            right: 0;
+        }
+    }
+}

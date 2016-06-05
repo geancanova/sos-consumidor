@@ -1,0 +1,31 @@
+.panel-title {
+    font-size: 14px;
+
+  > a {
+    @include arrow(10px, #165483);
+    display: block;
+    color: #2c3e50;
+    padding: 15px;
+
+    &:after {
+        @include rotate(180deg);
+        float: right;
+        margin-top: -10px;
+    }
+
+    &.collapsed:after {
+        @include rotate(0deg);
+        margin-top: 5px;
+    }
+  }
+}
+
+.c-panel-group {
+    .panel {
+        box-shadow: none;
+    }
+
+    .panel-heading {
+        border-radius: $panel-border-radius;
+    }
+}

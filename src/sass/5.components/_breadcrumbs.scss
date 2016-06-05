@@ -1,0 +1,30 @@
+.c-breadcrumb {
+    background-color: #165483;
+    padding: 10px 0;
+
+    @media (max-width: $screen-lg) {
+        padding: 10px 15px;
+    }
+
+    &,
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        & + .c-breadcrumb__item:before {
+            content: "|\00a0";
+        }
+
+        &.active {
+            font-weight: 700;
+        }
+    }
+}

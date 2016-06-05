@@ -1,47 +1,69 @@
-header.main-header
-    .row
-        .col-sm-5
-            h1.logo: img(src="img/placeholder2.jpg", alt="Placeholder" class="img-rounded img-responsive")
-        .col-sm-3
-            p Sexta-feira, 27 de maio de 2016
-        .col-sm-4
-            a(href="#") Área do Advogado
-            a(href="#") Área do Consumidor
-    .row
-        .col-sm-8
-            .main-nav
-                ul.main-nav__list
-                    li.main-nav__item
-                        a(href="#") Perguntas e Respostas
-                        ul.main-nav-sub
-                            li.main-nav-sub__item
-                                a(href="#") Dívidas
-                                ul.main-nav-sub-sub
-                                    li.main-nav-sub-sub__item
-                                        a(href="#") Empréstimos Consignados INSS
-                                    li.main-nav-sub-sub__item
-                                        a(href="#") Alienação Fiduciária
-                                    li.main-nav-sub-sub__item
-                                        a(href="#") Dívidas
-                                    li.main-nav-sub-sub__item
-                                        a(href="#") Título de Capitalização
-                                    li.main-nav-sub-sub__item
-                                        a(href="#") Leasing
-                                    li.main-nav-sub-sub__item
-                                        a(href="#") Tarifas Bancárias
-                                    li.main-nav-sub-sub__item
-                                        a(href="#") Cartão de Crédito
-                                    li.main-nav-sub-sub__item
-                                        a(href="#") Financiamentos
-                    li.main-nav__item
-                        a(href="#") Notícias
-                    li.main-nav__item
-                        a(href="#") Outros Serviços
-                    li.main-nav__item
-                        a(href="#") Institucional
-                    li.main-nav__item
-                        a(href="#") Contatos
-        .col-sm-4
-            form
-                input(type="text", placeholder="busca")
-                button buscar
+header.c-main-header
+    .container-fluid
+        .l-content-block
+            .row
+                .col-sm-6.col-md-7.col-lg-8
+                    .row
+                        .col-md-7
+                            h1.c-logo: a(href="/"): img(src="img/logo-sos-consumidor.png", alt="SOS Consumidor - Associação de Defesa do Consumidor")
+                        .col-md-5
+                            p.c-main-header__date Sexta-feira, 27 de maio de 2016
+                .col-sm-6.col-md-5.col-lg-4.text-right
+                    a(href="#", class="o-btn o-btn--primary c-main-header__btn c-main-header__btn--attorney") Área do Advogado
+                    a(href="#", class="o-btn o-btn--secondary c-main-header__btn c-main-header__btn--consumer") Área do Consumidor
+            hr.c-main-header__hr
+            button.c-hamburger.visible-xs-inline-block.js-hamburger: span
+            .c-main-nav
+                .row
+                    .col-md-9.col-lg-8
+                        ul.c-main-nav__list
+                            li.c-main-nav__item.c-main-nav__item--drop
+                                a(href="/perguntas-e-respostas") Perguntas e Respostas
+                                ul.c-main-nav-sub
+                                    li.c-main-nav-sub__item
+                                        a(href="/perguntas-e-respostas") Dívidas
+                                        ul.c-main-nav-sub.c-main-nav-sub--sub.hidden-xs
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Empréstimos Consignados INSS
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Alienação Fiduciária
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Dívidas
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Título de Capitalização
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Leasing
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Tarifas Bancárias
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Cartão de Crédito
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Financiamentos
+                                            li.c-main-nav-sub__item
+                                                a(href="/duvida-detalhe") Cheque Especial
+                                    li.c-main-nav-sub__item
+                                        a(href="/perguntas-e-respostas") Dano Moral
+                                    li.c-main-nav-sub__item
+                                        a(href="/perguntas-e-respostas") SPC/SERASA/SCPC
+                                    li.c-main-nav-sub__item
+                                        a(href="/perguntas-e-respostas") Defenda-se
+                                    li.c-main-nav-sub__item
+                                        a(href="/perguntas-e-respostas") Dicas Úteis
+                                    li.c-main-nav-sub__item
+                                        a(href="/perguntas-e-respostas") Informe-se
+                                    li.c-main-nav-sub__item
+                                        a(href="/perguntas-e-respostas") SFH
+                                    li.c-main-nav-sub__item
+                                        a(href="/perguntas-e-respostas") Dúvidas Trabalhistas
+                            li.c-main-nav__item
+                                a(href="/noticias") Notícias
+                            li.c-main-nav__item
+                                a(href="/outros-servicos") Outros Serviços
+                            li.c-main-nav__item
+                                a(href="/institucional") Institucional
+                            li.c-main-nav__item
+                                a(href="/contatos") Contatos
+                    .col-md-3.col-lg-4
+                        form.c-search.pull-right
+                            input(type="text", placeholder="busca", class="form-control form-control--no-border")
+                            button.o-btn.o-btn--primary.o-btn--sm Buscar

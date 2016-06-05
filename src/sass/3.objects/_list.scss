@@ -1,0 +1,9 @@
+.o-list {
+    @extend .list-unstyled;
+
+    &__item {
+        & + & {
+            margin-top: 15px;
+        }
+    }
+}

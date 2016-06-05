@@ -1,0 +1,38 @@
+@mixin button($bg-color) {
+    background-color: $bg-color;
+
+    &:hover,
+    &:focus {
+        background-color: lighten($bg-color, 10%);
+    }
+}
+
+.o-btn {
+    @include transition(all .2s);
+    display: inline-block;
+    border: none;
+    font-size: 16px;
+
+    &,
+    &:hover,
+    &:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &--primary {
+        @include button($brand-primary);
+    }
+
+    &--secondary {
+        @include button($brand-secondary);
+    }
+
+    &--sm {
+        padding: 5px 10px;
+    }
+
+    &--blk {
+        display: block;
+    }
+}

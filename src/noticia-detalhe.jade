@@ -6,107 +6,129 @@ block vars
   - var description = 'Orientar, esclarecer e ajudar os consumidores, principalmente àqueles que possuem dívidas, acerca de seus direitos, demonstrando de forma clara e objetiva como funcionam as principais formas de crédito, os tipos de contratos existentes e os sistemas de restrição de crédito como SPC, SERASA, SCPC e afins.'
 
 block content
-    .row
-        ol.breadcrumb
-            li: a(href="#") Página Inicial
-            li: a(href="#") Notícias
-            li.active Deputados votam a favor do Impedimento
+    .c-breadcrumb
+        .l-content-block
+            .c-breadcrumb__list
+                .c-breadcrumb__item: a(href="/") Página Inicial
+                .c-breadcrumb__item: a(href="/noticias") Notícias
+                .c-breadcrumb__item.active Deputados votam a favor do Impedimento
 
-        .col-sm-9
-            main.main-content
-                .row
-                    .col-sm-9
-                        a(href="#") &lt; Voltar para notícias
-                        .well.well-sm
-                            strong 14261
-                            |  pessoas já leram essa notícia
-                            .pull-right
-                                a(href="#") Tw
-                                a(href="#") Fb
+    .container-fluid
+        .l-content-block
+            .row
+                .col-sm-9
+                    main.c-main-content
+                        .row
+                            .col-sm-8
+                                a(href="#", class="o-link-secondary") &lt; Voltar para notícias
+                                .c-well.well.well-sm
+                                    strong 14261
+                                    |  pessoas já leram essa notícia
+                                    .pull-right
+                                        a(href="#", class="c-well__links"): img(src="/img/ico-twitter.png", alt="twitter")
+                                        a(href="#", class="c-well__links"): img(src="/img/ico-facebook.png", alt="facebook")
 
-                        h1 Deputados votam a favor do Impedimento
-                        .img-wrapper
-                            img(src="http://placehold.it/700x300", alt="Legenda da foto", class="img-responsive")
-                            span.img-legend Legenda da foto. Fonte da imagem
+                                h1.o-tit.o-tit--22 Deputados votam a favor do Impedimento
+                                .o-img-wrapper
+                                    img(src="http://placehold.it/870x400", alt="Legenda da foto")
+                                    span.o-img-wrapper__legend Legenda da foto. Fonte da imagem
 
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptate temporibus delectus accusantium nihil eveniet veniam quo obcaecati rerum similique enim, atque, excepturi facere dicta dolorum reiciendis iste! Quidem, earum!
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptate temporibus delectus accusantium nihil eveniet veniam quo obcaecati rerum similique enim, atque, excepturi facere dicta dolorum reiciendis iste! Quidem, earum!
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptate temporibus delectus accusantium nihil eveniet veniam quo obcaecati rerum similique enim, atque, excepturi facere dicta dolorum reiciendis iste! Quidem, earum!
-                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptate temporibus delectus accusantium nihil eveniet veniam quo obcaecati rerum similique enim, atque, excepturi facere dicta dolorum reiciendis iste! Quidem, earum!
-
-
-                        // Galeria
-                        .gallery
-                            .gallery__item
-                                img(src="http://placehold.it/700x300", alt="Legenda da foto", class="img-responsive")
-                        .gallery-nav
-                            .gallery-nav__item
-                                img(src="http://placehold.it/250x100", alt="Legenda da foto", class="img-responsive")
-
-                        a(href="#") Leia mais sobre este assunto | Notícias relacionadas
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptate temporibus delectus accusantium nihil eveniet veniam quo obcaecati rerum similique enim, atque, excepturi facere dicta dolorum reiciendis iste! Quidem, earum!
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptate temporibus delectus accusantium nihil eveniet veniam quo obcaecati rerum similique enim, atque, excepturi facere dicta dolorum reiciendis iste! Quidem, earum!
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptate temporibus delectus accusantium nihil eveniet veniam quo obcaecati rerum similique enim, atque, excepturi facere dicta dolorum reiciendis iste! Quidem, earum!
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit voluptate temporibus delectus accusantium nihil eveniet veniam quo obcaecati rerum similique enim, atque, excepturi facere dicta dolorum reiciendis iste! Quidem, earum!
 
 
-                        // Publicidade
-                        .advertising
-                            a(href="#"): img(src="http://placehold.it/700x50", alt="Publicidade")
+                                // Galeria
+                                .c-gallery.js-gallery
+                                    .c-gallery__item
+                                        img(src="http://placehold.it/870x400", alt="Legenda da foto")
+                                    .c-gallery__item
+                                        img(src="http://placehold.it/870x400", alt="Legenda da foto")
+                                    .c-gallery__item
+                                        img(src="http://placehold.it/870x400", alt="Legenda da foto")
+                                    .c-gallery__item
+                                        img(src="http://placehold.it/870x400", alt="Legenda da foto")
+                                    .c-gallery__item
+                                        img(src="http://placehold.it/870x400", alt="Legenda da foto")
+                                .c-gallery-nav.js-gallery-nav
+                                    .c-gallery-nav__item
+                                        img(src="http://placehold.it/135x90", alt="Legenda da foto")
+                                    .c-gallery-nav__item
+                                        img(src="http://placehold.it/135x90", alt="Legenda da foto")
+                                    .c-gallery-nav__item
+                                        img(src="http://placehold.it/135x90", alt="Legenda da foto")
+                                    .c-gallery-nav__item
+                                        img(src="http://placehold.it/135x90", alt="Legenda da foto")
+                                    .c-gallery-nav__item
+                                        img(src="http://placehold.it/135x90", alt="Legenda da foto")
+
+                                a(href="#") Leia mais sobre este assunto | Notícias relacionadas
 
 
-                        // Form Comentários
-                        h3 Deixe seu comentário
-                        form
-                            .form-group
-                                textarea(class="form-control", rows="3")
-                            .row
-                                .col-sm-6
+                                // Publicidade
+                                .o-advertising
+                                    a(href="#"): img(src="http://placehold.it/570x90", alt="Publicidade")
+
+
+                                // Form Comentários
+                                h3.o-tit.o-tit--22 Deixe seu comentário
+                                form
                                     .form-group
-                                        label Nome
-                                        input(class="form-control", type="text")
-                                .col-sm-6
+                                        textarea(class="form-control", rows="3")
+                                    .row
+                                        .col-sm-6
+                                            .form-group
+                                                label Nome
+                                                input(class="form-control", type="text")
+                                        .col-sm-6
+                                            .form-group
+                                                label Email
+                                                input(class="form-control", type="email")
                                     .form-group
-                                        label Email
-                                        input(class="form-control", type="email")
-                            .form-group
-                                button(type="submit", class="btn btn-default") Enviar
+                                        .g-recaptcha(data-sitekey="6LdwvCETAAAAANMEmfjcpd0UZdey1s8WDQzisdyO")
+                                    .form-group
+                                        button(type="submit", class="o-btn o-btn--sm o-btn--primary") Enviar
 
 
-                        // Lista de Comentários
-                        .comments
-                            | Existem <strong>3</strong> comentários
-                            ul.comments-list
-                                li.comments-list__item
-                                    span
-                                        strong Oscar Wylde
-                                        |  27/05/2016 | 22:00
-                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta asperiores mollitia a deserunt accusantium architecto cum est maxime sapiente, repellat consequuntur dolorem ea magni magnam. Velit nam, eligendi amet.
-                                li.comments-list__item
-                                    span
-                                        strong Oscar Wylde
-                                        |  27/05/2016 | 22:00
-                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta asperiores mollitia a deserunt accusantium architecto cum est maxime sapiente, repellat consequuntur dolorem ea magni magnam. Velit nam, eligendi amet.
-                                li.comments-list__item
-                                    span
-                                        strong Oscar Wylde
-                                        |  27/05/2016 | 22:00
-                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta asperiores mollitia a deserunt accusantium architecto cum est maxime sapiente, repellat consequuntur dolorem ea magni magnam. Velit nam, eligendi amet.
-                            a(href="#", class="btn") Visualizar mais comentários
+                                // Lista de Comentários
+                                .c-comments
+                                    | Existem <strong>3</strong> comentários
+                                    ul.c-comments__list
+                                        li.c-comments__item
+                                            span
+                                                strong Oscar Wylde
+                                                |  27/05/2016 | 22:00
+                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta asperiores mollitia a deserunt accusantium architecto cum est maxime sapiente, repellat consequuntur dolorem ea magni magnam. Velit nam, eligendi amet.
+                                        li.c-comments__item
+                                            span
+                                                strong Oscar Wylde
+                                                |  27/05/2016 | 22:00
+                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta asperiores mollitia a deserunt accusantium architecto cum est maxime sapiente, repellat consequuntur dolorem ea magni magnam. Velit nam, eligendi amet.
+                                        li.c-comments__item
+                                            span
+                                                strong Oscar Wylde
+                                                |  27/05/2016 | 22:00
+                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad soluta asperiores mollitia a deserunt accusantium architecto cum est maxime sapiente, repellat consequuntur dolorem ea magni magnam. Velit nam, eligendi amet.
+                                    a(href="#", class="o-btn o-btn--sm o-btn--primary") Visualizar mais comentários
 
-                    .col-sm-3
-                        h3 Notícias
-                        ul(class="links-list links-list--news")
-                        - for (var x = 0; x < 10; x++)
-                            li.links-list__item
-                                span 27/05/2016
-                                a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                        a(href="#", class="btn") Ver mais notícias
+                            .col-sm-4
+                                h3.o-tit.o-tit--22.o-tit--upper Notícias
+                                ul(class="o-links-list o-links-list--news")
+                                    - for (var x = 0; x < 10; x++)
+                                        li.o-links-list__item
+                                            span 27/05/2016
+                                            a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                                a(href="#", class="o-btn o-btn--sm o-btn--primary") Ver mais notícias
 
-                        h3 Perguntas Frequentes
-                        ul(class="links-list links-list--consumer")
-                        - for (var x = 0; x < 10; x++)
-                            li.links-list__item
-                                span Empréstimos Consignados do INSS
-                                a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit?
-                        a(href="#", class="btn") Ver mais perguntas frequentes
+                                h3.o-tit.o-tit--22.o-tit--upper Perguntas Frequentes
+                                ul(class="o-links-list o-links-list--consumer")
+                                    - for (var x = 0; x < 10; x++)
+                                        li.o-links-list__item
+                                            span Empréstimos Consignados do INSS
+                                            a(href="#") Lorem ipsum dolor sit amet, consectetur adipisicing elit?
+                                a(href="#", class="o-btn o-btn--sm o-btn--secondary") Ver mais perguntas frequentes
 
-        .col-sm-3
+                .col-sm-3
 
-            include ./templates/partials/aside.jade
+                    include ./templates/partials/aside.jade

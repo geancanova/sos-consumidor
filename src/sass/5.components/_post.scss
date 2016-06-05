@@ -1,0 +1,18 @@
+.c-post {
+    margin-bottom: 20px;
+
+    &__date {
+        display: block;
+        color: #2c3e50;
+    }
+
+    &__tit {
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 0;
+    }
+
+    &__excerpt {
+        color: #2c3e50;
+    }
+}

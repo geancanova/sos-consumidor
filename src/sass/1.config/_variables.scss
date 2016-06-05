@@ -1,0 +1,64 @@
+// Colors
+$brand-primary:             #a50006;
+$brand-secondary:           #0085b2;
+
+$text-color:                #555;
+
+// Fonts
+$base-font:                 'Open Sans', sans-serif;
+
+
+// Bootstrap Overrides
+
+//== Alerts
+$alert-padding:               10px;
+$alert-border-radius:         15px;
+
+$alert-warning-bg:            #ededed;
+$alert-warning-text:          #000;
+$alert-warning-border:        transparent;
+
+//== Forms
+$input-color:                    #2c3e50;
+$input-border:                   #2c3e50;
+$input-border-radius:            0;
+$input-border-focus:             $brand-primary;
+
+
+//== Pagination
+$pagination-color:                     #fff;
+$pagination-bg:                        $brand-primary;
+$pagination-border:                    transparent;
+
+$pagination-hover-color:               #fff;
+$pagination-hover-bg:                  lighten($brand-primary, 10%);
+$pagination-hover-border:              transparent;
+
+$pagination-active-bg:                 #ccc;
+$pagination-active-border:             transparent;
+
+$pagination-disabled-color:            #fff;
+$pagination-disabled-bg:               #ccc;
+$pagination-disabled-border:           transparent;
+
+
+//== Panels
+$panel-body-padding:          15px !default;
+$panel-heading-padding:       0;
+$panel-border-radius:         15px;
+$panel-inner-border:          transparent;
+
+$panel-default-border:        transparent;
+$panel-default-heading-bg:    #ededed;
+
+@mixin arrow($arrow-width, $arrow-color) {
+    &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        border-style: solid;
+        border-width: $arrow-width;
+        border-color: transparent;
+        border-top-color: $arrow-color;
+    }
+}

@@ -1,0 +1,20 @@
+.o-links-list {
+    @extend .list-unstyled;
+    border-top: 1px solid #eee;
+    margin-bottom: 20px;
+
+    &__item {
+        padding-top: 15px;
+
+        span {
+            display: block;
+            color: #5f6d7a;
+        }
+    }
+
+    &--consumer {
+        a {
+            @extend .o-link-secondary;
+        }
+    }
+}

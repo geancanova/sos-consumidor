@@ -1,0 +1,41 @@
+.c-nav-tabs {
+  border-bottom: none;
+  margin: 30px 0 50px;
+
+    > li {
+        > a {
+            background-color: #165483;
+            color: #fff;
+            border: none;
+            border-radius: 0;
+            font-weight: 700;
+            padding: 15px 20px;
+
+            &:hover,
+            &:focus {
+                color: rgba(#fff, .5);
+                background-color: #165483;
+            }
+        }
+
+        &.active > a {
+            @include arrow(20px, #165483);
+            position: relative;
+
+            &,
+            &:hover,
+            &:focus {
+                color: rgba(#fff, .5);
+                background-color: #165483;
+                border: none;
+            }
+
+            &:after {
+                position: absolute;
+                left: 50%;
+                bottom: -40px;
+                margin-left: -20px;
+            }
+        }
+    }
+}

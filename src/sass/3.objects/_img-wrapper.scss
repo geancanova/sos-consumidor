@@ -1,0 +1,11 @@
+.o-img-wrapper {
+    margin: 20px auto;
+
+    &__legend {
+        display: block;
+        background-color: #ededed;
+        font-size: 12px;
+        font-style: italic;
+        padding: 5px 10px;
+    }
+}
