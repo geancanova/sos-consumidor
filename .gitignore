@@ -1,6 +1,6 @@
-sos-layouts
-build
-*.zip
+/sos-layouts
+/build
+/*.zip
 
 ### NODE ###
 node_modules
