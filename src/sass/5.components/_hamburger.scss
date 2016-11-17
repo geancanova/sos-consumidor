@@ -6,7 +6,12 @@
     border: 1px solid #2c3e50;
     border-radius: 5px;
     margin-bottom: 15px;
+    margin-top: 20px;
     padding: 4px;
+
+    @media (max-width: $screen-xs-max) {
+        vertical-align: middle;
+    }
 
     span {
         top: 50%;
@@ -35,6 +40,24 @@
 
         &:after {
             top: 10px;
+        }
+    }
+
+    &--dots {
+        width: 22px;
+        background-color: rgba($text-color, .1);
+        border: none;
+        border-radius: 0;
+
+         span {
+            left: 9px;
+
+            &,
+            &:before,
+            &:after {
+                height: 4px;
+                width: 4px;
+            }
         }
     }
 }

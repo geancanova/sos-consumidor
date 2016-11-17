@@ -5,14 +5,24 @@ header.c-main-header
                 .col-sm-6.col-md-7.col-lg-8
                     .row
                         .col-md-7
-                            h1.c-logo: a(href="/"): img(src="img/logo-sos-consumidor.png", alt="SOS Consumidor - Associação de Defesa do Consumidor")
+                            .row
+                                .col-xs-3.visible-xs-block.text-left
+                                    button.c-hamburger.visible-xs-inline-block.js-hamburger: span
+                                .col-xs-7.col-sm-12.text-center
+                                    h1.c-logo: a(href="/"): img(src="img/logo-sos-consumidor.png", alt="SOS Consumidor - Associação de Defesa do Consumidor")
+                                .col-xs-2.visible-xs-block.text-right
+                                     button.c-hamburger.c-hamburger--dots.visible-xs-inline-block.js-hamburger-dot: span
                         .col-md-5
                             p.c-main-header__date Sexta-feira, 27 de maio de 2016
-                .col-sm-6.col-md-5.col-lg-4.text-right
+                .col-sm-6.col-md-5.col-lg-4.text-right.c-forum-nav
                     a(href="#", class="o-btn o-btn--primary c-main-header__btn c-main-header__btn--attorney") Área do Advogado
                     a(href="#", class="o-btn o-btn--secondary c-main-header__btn c-main-header__btn--consumer") Área do Consumidor
             hr.c-main-header__hr
-            button.c-hamburger.visible-xs-inline-block.js-hamburger: span
+
+            //- Form Mobile
+            form.c-search.c-search--sm(action="http://www.sosconsumidor.com.br/noticias-cse", method="get")
+                input(type="text", placeholder="busca", class="form-control form-control--no-border")
+                button.o-btn.o-btn--primary.o-btn--sm Buscar
             .c-main-nav
                 .row
                     .col-md-9.col-lg-8
@@ -64,6 +74,6 @@ header.c-main-header
                             li.c-main-nav__item
                                 a(href="/contatos") Contatos
                     .col-md-3.col-lg-4
-                        form.c-search.pull-right
+                        form.c-search.c-search--md.pull-right(action="http://www.sosconsumidor.com.br/noticias-cse", method="get")
                             input(type="text", placeholder="busca", class="form-control form-control--no-border")
                             button.o-btn.o-btn--primary.o-btn--sm Buscar

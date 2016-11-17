@@ -1,0 +1,16 @@
+.c-forum-nav {
+    @media (max-width: $screen-xs-max) {
+        position: absolute;
+        z-index: 1;
+        top: 70px;
+        min-height: 0;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: min-height .2s;
+    }
+
+    &.active {
+        min-height: 200px;
+    }
+}

@@ -8,6 +8,10 @@
     &__date {
         color: #666;
 
+        @media (max-width: $screen-xs-max) {
+            text-align: center;
+        }
+
         @media (min-width: $screen-md) {
             padding-top: 50px;
         }
@@ -25,6 +29,11 @@
         font-size: 14px;
         padding-top: 70px;
         text-align: center;
+
+        @media (max-width: $screen-xs-max) {
+            display: block;
+            width: 100%;
+        }
 
         @media (min-width: $screen-sm) {
             width: 160px;
@@ -72,6 +81,20 @@
         .o-btn {
             z-index: 1;
             right: 0;
+        }
+    }
+
+    &--sm {
+        display: none;
+
+        @media (max-width: $screen-xs-max) {
+            display: block;
+        }
+    }
+
+    &--md {
+        @media (max-width: $screen-xs-max) {
+            display: none;
         }
     }
 }

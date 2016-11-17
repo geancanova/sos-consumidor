@@ -25,6 +25,13 @@ $(function() {
         $('.c-main-nav').toggleClass('active');
     });
 
+    // Hamburger Dots Icon
+    $('.js-hamburger-dot').on('click', function(e) {
+        e.preventDefault();
+
+        $('.c-forum-nav').toggleClass('active');
+    });
+
 
     // Nav Tabs Hash
     var url = window.location.toString();
